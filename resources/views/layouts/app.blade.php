@@ -25,7 +25,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/tasks') }}">
                     Dreamscape Networks Inc.
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -48,7 +48,10 @@
                             
                         @else
                         <li class="nav-item">
-                            <a title="logout" class="btn btn-info btn-sm" href="{{ route('logout') }}"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+                            <a title="Register" class="btn btn-primary btn-sm" href="{{ route('register') }}"><span class="glyphicon glyphicon-log-out"></span>Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Logout" class="btn btn-danger btn-sm" href="{{ route('logout') }}">Logout</a>
                         </li>
                         @endguest
                     </ul>
