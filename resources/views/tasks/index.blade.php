@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">Dreamscape Networks Inc. Videoke, Gym & Game Room Reservation <div class="pull-right"><a class="btn btn-info" role="button" href="{{route('tasks.create')}}">Create Reservation</a></div></div>
+                <div class="card-header">Dreamscape Networks Inc. Videoke, Gym & Game Room Reservation <a class="btn btn-info float-right" role="button" href="{{route('tasks.create')}}">Create Reservation</a></div>
                 
                 <div class="card-body">
                     <div id='calendar'></div>
