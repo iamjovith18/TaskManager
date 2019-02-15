@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Dreamscape') }}</title>
+    <title>Dreamscape Networks Inc.</title>
 
     <!-- Scripts -->
     <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
@@ -48,7 +48,7 @@
                             
                         @else
                         <li class="nav-item">
-                            <a title="Register" class="btn btn-primary btn-sm" href="{{ route('register') }}"><span class="glyphicon glyphicon-log-out"></span>Register</a>
+                            <a title="Register" class="btn btn-primary btn-sm" href="{{ route('register') }}">Add Administrator</a>
                         </li>
                         <li class="nav-item">
                             <a title="Logout" class="btn btn-danger btn-sm" href="{{ route('logout') }}">Logout</a>

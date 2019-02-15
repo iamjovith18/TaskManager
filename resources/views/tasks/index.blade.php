@@ -34,10 +34,10 @@
             events : [
                 @foreach($tasks as $task)
                 {
-                    title : '{{ $task->name }} | Reserved by:{{ucfirst($task->description)}}',
+                    title : '{{ $task->name }} | Reserved by:{{ucwords($task->description)}}',
                     start : '{{ $task->task_date }}',
                     end : '{{$task->end_date_task }}',
-                    url : '{{ route('tasks.edit', $task->id) }}',
+                    url : '{{ route('tasks.show', $task->id) }}',
                     allDay:false,
                 },
                 @endforeach
